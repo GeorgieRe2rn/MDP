@@ -1,0 +1,541 @@
+[
+  {
+    "market": "result",
+    "phase": "PRE",
+    "active": "CatBoost + Poisson",
+    "active_revision": 9,
+    "report": {
+      "samples": 1673,
+      "minimum": 200,
+      "status": "awaiting_fresh_test",
+      "schema": "specialists-v2.0",
+      "market": "result",
+      "phase": "PRE",
+      "weight": 0.75,
+      "train_matches": 1003,
+      "validation_matches": 333,
+      "test_matches": 335,
+      "train_end": "2026-04-12T19:00:00+00:00",
+      "validation_start": "2026-04-12T23:00:00+00:00",
+      "test_start": "2026-09-07T18:45:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "candidate": {
+        "log_loss": 1.0586804930738678,
+        "accuracy": 0.4417910447761194,
+        "brier": 0.6386766212961602
+      },
+      "baseline": {
+        "log_loss": 1.0784765159349703,
+        "accuracy": 0.44776119402985076,
+        "brier": 0.6516637609908685
+      },
+      "champion": {
+        "log_loss": 1.063705582065441,
+        "accuracy": 0.4417910447761194,
+        "brier": 0.6416543330379394
+      },
+      "feature_importance": {
+        "league": 12.079298942503037,
+        "home_gf": 8.831138562502845,
+        "home_ga": 6.603846118896029,
+        "away_gf": 8.930876376479114,
+        "away_ga": 7.556991487542649,
+        "home_points": 16.02516399257248,
+        "away_points": 16.415386634050066,
+        "home_rest": 12.861202291980197,
+        "away_rest": 6.144738981116563,
+        "home_home_share": 3.218844155666113,
+        "away_home_share": 1.3325124566908866,
+        "home_count_for": 0.0,
+        "home_count_against": 0.0,
+        "away_count_for": 0.0,
+        "away_count_against": 0.0
+      }
+    },
+    "linear": null,
+    "active_report": {
+      "samples": 1595,
+      "minimum": 200,
+      "status": "adopted",
+      "schema": "specialists-v2.0",
+      "market": "result",
+      "phase": "PRE",
+      "weight": 0.75,
+      "train_matches": 951,
+      "validation_matches": 318,
+      "test_matches": 320,
+      "train_end": "2026-04-04T19:00:00+00:00",
+      "validation_start": "2026-04-05T01:05:00+00:00",
+      "test_start": "2026-08-23T13:00:00+00:00",
+      "test_end": "2026-10-19T19:00:00+00:00",
+      "candidate": {
+        "log_loss": 1.0587983312628773,
+        "accuracy": 0.45625,
+        "brier": 0.637328465633124
+      },
+      "baseline": {
+        "log_loss": 1.073570127956376,
+        "accuracy": 0.45,
+        "brier": 0.6475807538649165
+      },
+      "champion": {
+        "log_loss": 1.073570127956376,
+        "accuracy": 0.45,
+        "brier": 0.6475807538649165
+      },
+      "feature_importance": {
+        "league": 15.137328783829055,
+        "home_gf": 9.130593001042614,
+        "home_ga": 8.199051444612586,
+        "away_gf": 7.455310208235634,
+        "away_ga": 7.310559770718397,
+        "home_points": 13.59682405507709,
+        "away_points": 16.691732610975826,
+        "home_rest": 13.137686172116375,
+        "away_rest": 4.930847821018352,
+        "home_home_share": 2.7610075356149406,
+        "away_home_share": 1.649058596759146,
+        "home_count_for": 0.0,
+        "home_count_against": 0.0,
+        "away_count_for": 0.0,
+        "away_count_against": 0.0
+      }
+    }
+  },
+  {
+    "market": "goals",
+    "phase": "PRE",
+    "active": "Regresi\u00f3n lineal + Poisson",
+    "active_revision": 56,
+    "report": {
+      "samples": 1673,
+      "minimum": 200,
+      "status": "awaiting_fresh_test",
+      "schema": "specialists-v2.0",
+      "market": "goals",
+      "phase": "PRE",
+      "weight": 0.5,
+      "train_matches": 1003,
+      "validation_matches": 333,
+      "test_matches": 335,
+      "train_end": "2026-04-12T19:00:00+00:00",
+      "validation_start": "2026-04-12T23:00:00+00:00",
+      "test_start": "2026-09-07T18:45:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "candidate": {
+        "log_loss": 1.9624409131579263,
+        "mae": 1.4002173388901218
+      },
+      "baseline": {
+        "log_loss": 1.974889481359641,
+        "mae": 1.4208955223880597
+      },
+      "champion": {
+        "log_loss": 1.9629679913959108,
+        "mae": 1.3972258470923378
+      },
+      "feature_importance": {
+        "league": 9.204696121836886,
+        "home_gf": 4.3373337019552665,
+        "home_ga": 6.82353725100886,
+        "away_gf": 13.138918236119029,
+        "away_ga": 6.716569835866933,
+        "home_points": 9.652130347792342,
+        "away_points": 9.418393297605325,
+        "home_rest": 17.6999636900439,
+        "away_rest": 11.818587087421378,
+        "home_home_share": 7.930414151206672,
+        "away_home_share": 3.259456279143416,
+        "home_count_for": 0.0,
+        "home_count_against": 0.0,
+        "away_count_for": 0.0,
+        "away_count_against": 0.0
+      }
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 1673,
+      "minimum": 200,
+      "market": "goals",
+      "phase": "PRE",
+      "status": "adopted",
+      "weight": 0.5,
+      "candidate": {
+        "log_loss": 1.9629679913959108,
+        "mae": 1.3972258470923378
+      },
+      "baseline": {
+        "log_loss": 1.974889481359641,
+        "mae": 1.4208955223880597
+      },
+      "champion": {
+        "log_loss": 1.974889481359641,
+        "mae": 1.4208955223880597
+      },
+      "train_matches": 1003,
+      "validation_matches": 333,
+      "test_matches": 335,
+      "train_end": "2026-04-12T19:00:00+00:00",
+      "validation_start": "2026-04-12T23:00:00+00:00",
+      "test_start": "2026-09-07T18:45:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "negative_policy": "clip_to_0.01"
+    },
+    "active_report": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 1673,
+      "minimum": 200,
+      "market": "goals",
+      "phase": "PRE",
+      "status": "adopted",
+      "weight": 0.5,
+      "candidate": {
+        "log_loss": 1.9629679913959108,
+        "mae": 1.3972258470923378
+      },
+      "baseline": {
+        "log_loss": 1.974889481359641,
+        "mae": 1.4208955223880597
+      },
+      "champion": {
+        "log_loss": 1.974889481359641,
+        "mae": 1.4208955223880597
+      },
+      "train_matches": 1003,
+      "validation_matches": 333,
+      "test_matches": 335,
+      "train_end": "2026-04-12T19:00:00+00:00",
+      "validation_start": "2026-04-12T23:00:00+00:00",
+      "test_start": "2026-09-07T18:45:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "negative_policy": "clip_to_0.01"
+    }
+  },
+  {
+    "market": "corners",
+    "phase": "PRE",
+    "active": "Regresi\u00f3n lineal + Poisson",
+    "active_revision": 58,
+    "report": {
+      "samples": 303,
+      "minimum": 200,
+      "status": "awaiting_fresh_test",
+      "schema": "specialists-v2.0",
+      "market": "corners",
+      "phase": "PRE",
+      "weight": 0.25,
+      "train_matches": 178,
+      "validation_matches": 56,
+      "test_matches": 64,
+      "train_end": "2026-10-11T18:45:00+00:00",
+      "validation_start": "2026-10-12T01:15:00+00:00",
+      "test_start": "2026-10-18T13:00:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "candidate": {
+        "log_loss": 2.8361959328826387,
+        "mae": 3.2192894619796437
+      },
+      "baseline": {
+        "log_loss": 2.859797188143977,
+        "mae": 3.315625
+      },
+      "champion": {
+        "log_loss": 2.7894022828932625,
+        "mae": 3.120829713143125
+      },
+      "feature_importance": {
+        "league": 2.174252221957814,
+        "home_gf": 9.832448516165531,
+        "home_ga": 1.7281362524561064,
+        "away_gf": 1.1812711388241035,
+        "away_ga": 3.2629015338527028,
+        "home_points": 11.524671633224587,
+        "away_points": 18.138249825851485,
+        "home_rest": 2.493102927350575,
+        "away_rest": 5.8814475112674955,
+        "home_home_share": 2.0067655585822006,
+        "away_home_share": 3.476806260219729,
+        "home_count_for": 10.355111935296486,
+        "home_count_against": 4.2839831078035235,
+        "away_count_for": 18.67752641986854,
+        "away_count_against": 4.9833251572791095
+      }
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 303,
+      "minimum": 200,
+      "market": "corners",
+      "phase": "PRE",
+      "status": "adopted",
+      "weight": 0.5,
+      "candidate": {
+        "log_loss": 2.7894022828932625,
+        "mae": 3.120829713143125
+      },
+      "baseline": {
+        "log_loss": 2.859797188143977,
+        "mae": 3.315625
+      },
+      "champion": {
+        "log_loss": 2.859797188143977,
+        "mae": 3.315625
+      },
+      "train_matches": 178,
+      "validation_matches": 56,
+      "test_matches": 64,
+      "train_end": "2026-10-11T18:45:00+00:00",
+      "validation_start": "2026-10-12T01:15:00+00:00",
+      "test_start": "2026-10-18T13:00:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "negative_policy": "clip_to_0.01"
+    },
+    "active_report": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 303,
+      "minimum": 200,
+      "market": "corners",
+      "phase": "PRE",
+      "status": "adopted",
+      "weight": 0.5,
+      "candidate": {
+        "log_loss": 2.7894022828932625,
+        "mae": 3.120829713143125
+      },
+      "baseline": {
+        "log_loss": 2.859797188143977,
+        "mae": 3.315625
+      },
+      "champion": {
+        "log_loss": 2.859797188143977,
+        "mae": 3.315625
+      },
+      "train_matches": 178,
+      "validation_matches": 56,
+      "test_matches": 64,
+      "train_end": "2026-10-11T18:45:00+00:00",
+      "validation_start": "2026-10-12T01:15:00+00:00",
+      "test_start": "2026-10-18T13:00:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "negative_policy": "clip_to_0.01"
+    }
+  },
+  {
+    "market": "yellows",
+    "phase": "PRE",
+    "active": "CatBoost + Poisson",
+    "active_revision": 12,
+    "report": {
+      "samples": 303,
+      "minimum": 200,
+      "status": "awaiting_fresh_test",
+      "schema": "specialists-v2.0",
+      "market": "yellows",
+      "phase": "PRE",
+      "weight": 0.25,
+      "train_matches": 178,
+      "validation_matches": 56,
+      "test_matches": 64,
+      "train_end": "2026-10-11T18:45:00+00:00",
+      "validation_start": "2026-10-12T01:15:00+00:00",
+      "test_start": "2026-10-18T13:00:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "candidate": {
+        "log_loss": 2.0694167854109558,
+        "mae": 1.5962329111158302
+      },
+      "baseline": {
+        "log_loss": 2.091354757171528,
+        "mae": 1.6171875
+      },
+      "champion": {
+        "log_loss": 2.0609048522186026,
+        "mae": 1.5885796034730957
+      },
+      "feature_importance": {
+        "league": 2.0452935156554983,
+        "home_gf": 7.02005640329031,
+        "home_ga": 4.857709673902435,
+        "away_gf": 9.021936237041755,
+        "away_ga": 3.935881840028662,
+        "home_points": 3.58828200405001,
+        "away_points": 8.277467727256884,
+        "home_rest": 8.804825307910539,
+        "away_rest": 7.951552689160442,
+        "home_home_share": 5.689439019192213,
+        "away_home_share": 3.1930855038980934,
+        "home_count_for": 7.217459259321037,
+        "home_count_against": 9.946578362130257,
+        "away_count_for": 10.522861270045995,
+        "away_count_against": 7.927571187115837
+      }
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 303,
+      "minimum": 200,
+      "market": "yellows",
+      "phase": "PRE",
+      "status": "not_improved",
+      "weight": 0.25,
+      "candidate": {
+        "log_loss": 2.081099024534488,
+        "mae": 1.623683059396874
+      },
+      "baseline": {
+        "log_loss": 2.091354757171528,
+        "mae": 1.6171875
+      },
+      "champion": {
+        "log_loss": 2.0609048522186026,
+        "mae": 1.5885796034730957
+      },
+      "train_matches": 178,
+      "validation_matches": 56,
+      "test_matches": 64,
+      "train_end": "2026-10-11T18:45:00+00:00",
+      "validation_start": "2026-10-12T01:15:00+00:00",
+      "test_start": "2026-10-18T13:00:00+00:00",
+      "test_end": "2026-10-25T11:30:00+00:00",
+      "negative_policy": "clip_to_0.01"
+    },
+    "active_report": {
+      "samples": 255,
+      "minimum": 200,
+      "status": "adopted",
+      "schema": "specialists-v2.0",
+      "market": "yellows",
+      "phase": "PRE",
+      "weight": 0.25,
+      "train_matches": 145,
+      "validation_matches": 50,
+      "test_matches": 51,
+      "train_end": "2026-10-10T13:00:00+00:00",
+      "validation_start": "2026-10-10T17:00:00+00:00",
+      "test_start": "2026-10-17T03:00:00+00:00",
+      "test_end": "2026-10-19T19:00:00+00:00",
+      "candidate": {
+        "log_loss": 2.028970529937873,
+        "mae": 1.4373967427505376
+      },
+      "baseline": {
+        "log_loss": 2.052865084100245,
+        "mae": 1.4588235294117649
+      },
+      "champion": {
+        "log_loss": 2.052865084100245,
+        "mae": 1.4588235294117649
+      },
+      "feature_importance": {
+        "league": 0.4504150088853793,
+        "home_gf": 5.215057507707653,
+        "home_ga": 4.782740907308677,
+        "away_gf": 9.60513720745757,
+        "away_ga": 4.957609794153851,
+        "home_points": 3.943346525553449,
+        "away_points": 7.815538374159268,
+        "home_rest": 8.578667017728513,
+        "away_rest": 8.472227508958591,
+        "home_home_share": 5.001198606489052,
+        "away_home_share": 2.030436999262397,
+        "home_count_for": 6.3055444472427205,
+        "home_count_against": 11.087716221033036,
+        "away_count_for": 13.389036472777118,
+        "away_count_against": 8.365327401282737
+      }
+    }
+  },
+  {
+    "market": "result",
+    "phase": "LIVE",
+    "active": "Poisson observado",
+    "active_revision": null,
+    "report": {
+      "samples": 71,
+      "minimum": 200,
+      "status": "awaiting_evidence",
+      "schema": "specialists-v2.0",
+      "market": "result",
+      "phase": "LIVE"
+    },
+    "linear": null,
+    "active_report": null
+  },
+  {
+    "market": "goals",
+    "phase": "LIVE",
+    "active": "Poisson observado",
+    "active_revision": null,
+    "report": {
+      "samples": 71,
+      "minimum": 200,
+      "status": "awaiting_evidence",
+      "schema": "specialists-v2.0",
+      "market": "goals",
+      "phase": "LIVE"
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 71,
+      "minimum": 200,
+      "market": "goals",
+      "phase": "LIVE",
+      "status": "awaiting_evidence"
+    },
+    "active_report": null
+  },
+  {
+    "market": "corners",
+    "phase": "LIVE",
+    "active": "Poisson observado",
+    "active_revision": null,
+    "report": {
+      "samples": 39,
+      "minimum": 200,
+      "status": "awaiting_evidence",
+      "schema": "specialists-v2.0",
+      "market": "corners",
+      "phase": "LIVE"
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 39,
+      "minimum": 200,
+      "market": "corners",
+      "phase": "LIVE",
+      "status": "awaiting_evidence"
+    },
+    "active_report": null
+  },
+  {
+    "market": "yellows",
+    "phase": "LIVE",
+    "active": "Poisson observado",
+    "active_revision": null,
+    "report": {
+      "samples": 39,
+      "minimum": 200,
+      "status": "awaiting_evidence",
+      "schema": "specialists-v2.0",
+      "market": "yellows",
+      "phase": "LIVE"
+    },
+    "linear": {
+      "family": "Regresi\u00f3n lineal OLS",
+      "schema": "linear-ols-v1",
+      "samples": 39,
+      "minimum": 200,
+      "market": "yellows",
+      "phase": "LIVE",
+      "status": "awaiting_evidence"
+    },
+    "active_report": null
+  }
+]
