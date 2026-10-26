@@ -70,7 +70,7 @@ def page(story,n,title,items):
 
 def emit(name,story,label):
     doc=SimpleDocTemplate(str(OUT/name),pagesize=A4,rightMargin=50,leftMargin=50,topMargin=61,bottomMargin=60,title=label,author='Nexo - documentación del proyecto',subject='KDD, aprendizaje supervisado y análisis de fútbol')
-    doc.build(story,onFirstPage=footer(label),onLaterPages=footer(label))
+    doc.build(list(story),onFirstPage=footer(label),onLaterPages=footer(label))
     r=PdfReader(OUT/name);print(name,len(r.pages),'páginas')
 
 names={'result':'Ganador / empate','goals':'Goles','corners':'Córners','yellows':'Amarillas'}
